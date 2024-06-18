@@ -56,7 +56,7 @@ function(conan_package_library_targets libraries package_libdir package_bindir l
             else()
               if(NOT TARGET ${_LIB_NAME})
                   # library_type can be STATIC, still UNKNOWN (if no package type available in the recipe) or SHARED (but no windows)
-                  add_library(${_LIB_NAME} ${library_type} IMPORTED)
+                  add_library(${_LIB_NAME} ${library_type} IMPORTED GLOBAL)
               endif()
               message(DEBUG "Created target ${_LIB_NAME} ${library_type} IMPORTED")
               set_target_properties(${_LIB_NAME} PROPERTIES IMPORTED_LOCATION${config_suffix} ${CONAN_FOUND_LIBRARY} IMPORTED_NO_SONAME ${no_soname_mode})
