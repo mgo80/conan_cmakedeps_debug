@@ -12,7 +12,7 @@ endif()
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(openssl_PACKAGE_FOLDER_RELEASE "/home/mirko/.conan2/p/opens5a947b9734ec2/p")
+set(openssl_PACKAGE_FOLDER_RELEASE "${CMAKE_CURRENT_LIST_DIR}/../openssl")
 set(openssl_BUILD_MODULES_PATHS_RELEASE )
 
 
