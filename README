@@ -1,0 +1,5 @@
+# configure with:
+cmake -GNinja . -DCMAKE_BUILD_TYPE=Release
+
+# run ninja to see deps and navigate to "main/main"
+ninja -t browse
